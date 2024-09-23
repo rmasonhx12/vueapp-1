@@ -1,26 +1,16 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
+//  Vue 3 using Composition API ~ remove default app and replace 
+// setup allows for simpler support for components
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+
+<script setup>
+import MyCounter from './components/MyCounter.vue'
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<template>
+  <MyCounter />
+</template>
+<style scoped>
+h1 {font-family:papyrus;
+font-size:20px;
 }
 </style>
